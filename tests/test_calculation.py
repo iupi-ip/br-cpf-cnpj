@@ -1,4 +1,4 @@
-from py_cpf_cnpj.calculation import calculate_dv_cpf, calculate_dv_cnpj
+from br_cpf_cnpj.calculation import calculate_dv_cpf, calculate_dv_cnpj
 
 
 def test_calculate_dv_cpf_known_value():

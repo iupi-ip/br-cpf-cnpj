@@ -21,3 +21,6 @@ and this project follows **Semantic Versioning (SemVer)**.
 
 ---
 
+## [0.1.1] - 2026-02-05
+### Fixed
+- Unique project name

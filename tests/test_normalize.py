@@ -1,4 +1,4 @@
-from py_cpf_cnpj.normalize import normalize_cpf, normalize_cnpj
+from br_cpf_cnpj.normalize import normalize_cpf, normalize_cnpj
 
 
 def test_normalize_cpf():

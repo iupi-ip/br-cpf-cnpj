@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "py-cpf-cnpj"
-version = "0.1.0"
+name = "br-cpf-cnpj"
+version = "0.1.1"
 description = "CPF and CNPJ validation and generation with support for alphanumeric CNPJ"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -29,9 +29,9 @@ dependencies = []
 dev = ["pytest"]
 
 [project.urls]
-Homepage = "https://github.com/RenanCampista/py-cpf-cnpj"
-Repository = "https://github.com/RenanCampista/py-cpf-cnpj"
-Issues = "https://github.com/RenanCampista/py-cpf-cnpj/issues"
+Homepage = "https://github.com/RenanCampista/br-cpf-cnpj"
+Repository = "https://github.com/RenanCampista/br-cpf-cnpj"
+Issues = "https://github.com/RenanCampista/br-cpf-cnpj/issues"
 
 [tool.setuptools]
-packages = ["py_cpf_cnpj"]
+packages = ["br_cpf_cnpj"]
