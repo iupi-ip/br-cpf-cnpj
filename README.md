@@ -1,4 +1,4 @@
-# 📦 py-cpf-cnpj
+# 📦 br-cpf-cnpj
 
 A Python library for **CPF and CNPJ validation and generation**, with **support for the new alphanumeric CNPJ standard**.
 
@@ -16,7 +16,7 @@ A Python library for **CPF and CNPJ validation and generation**, with **support 
 ## 📥 Installation
 
 ```bash
-pip install py-cpf-cnpj
+pip install br-cpf-cnpj
 ```
 
 ---
@@ -25,7 +25,7 @@ pip install py-cpf-cnpj
 ### Validate CPF
 
 ```python
-from py_cpf_cnpj import is_valid_cpf
+from br_cpf_cnpj import is_valid_cpf
 
 is_valid_cpf("529.982.247-25")
 # True
@@ -34,7 +34,7 @@ is_valid_cpf("529.982.247-25")
 ### Validate CNPJ
 
 ```python
-from py_cpf_cnpj import is_valid_cnpj
+from br_cpf_cnpj import is_valid_cnpj
 
 # Validate numeric CNPJ
 is_valid_cnpj("11.222.333/0001-81")
@@ -48,7 +48,7 @@ is_valid_cnpj("2P.76B.MNX/0001-66")
 ### Generate Random CPF
 
 ```python
-from py_cpf_cnpj import generate_random_cpf
+from br_cpf_cnpj import generate_random_cpf
 
 cpf = generate_random_cpf(masked=True)
 print(cpf)
@@ -62,7 +62,7 @@ print(cpf_unmasked)
 ### Generate Random CNPJ
 
 ```python
-from py_cpf_cnpj import generate_random_cnpj
+from br_cpf_cnpj import generate_random_cnpj
 
 # Generate numeric CNPJ
 cnpj_numeric = generate_random_cnpj(alphanumeric=False, masked=True)
@@ -102,7 +102,7 @@ MIT License.
 ---
 
 # Versão em Português
-# 📦 py-cpf-cnpj
+# 📦 br-cpf-cnpj
 Uma biblioteca Python para **validação e geração de CPF e CNPJ**, com **suporte ao novo padrão de CNPJ alfanumérico**.
 
 ---
@@ -120,14 +120,14 @@ Uma biblioteca Python para **validação e geração de CPF e CNPJ**, com **supo
 ## 📥 Instalação
 
 ```bash
-pip install py-cpf-cnpj
+pip install br-cpf-cnpj
 ```
 
 ## 🚀 Uso
 ### Validar CPF
 
 ```python
-from py_cpf_cnpj import is_valid_cpf
+from br_cpf_cnpj import is_valid_cpf
 
 is_valid_cpf("529.982.247-25")
 # True
@@ -136,7 +136,7 @@ is_valid_cpf("529.982.247-25")
 ### Validar CNPJ
 
 ```python
-from py_cpf_cnpj import is_valid_cnpj
+from br_cpf_cnpj import is_valid_cnpj
 
 # Validar CNPJ numérico
 is_valid_cnpj("11.222.333/0001-81")
@@ -150,7 +150,7 @@ is_valid_cnpj("2P.76B.MNX/0001-66")
 ### Gerar CPF Aleatório
 
 ```python
-from py_cpf_cnpj import generate_random_cpf
+from br_cpf_cnpj import generate_random_cpf
 
 cpf = generate_random_cpf(masked=True)
 print(cpf)
@@ -164,7 +164,7 @@ print(cpf_unmasked)
 ### Gerar CNPJ Aleatório
 
 ```python
-from py_cpf_cnpj import generate_random_cnpj
+from br_cpf_cnpj import generate_random_cnpj
 
 # Gerar CNPJ numérico
 cnpj_numeric = generate_random_cnpj(alphanumeric=False, masked=True)
