@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-cpf-cnpj"
+version = "0.1.0"
+description = "CPF and CNPJ validation and generation with support for alphanumeric CNPJ"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+authors = [
+  { name = "RenanCampista", email = "rennan.campistah@gmail.com" }
+]
+
+keywords = ["cpf", "cnpj", "brasil", "validation", "validação"]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/RenanCampista/py-cpf-cnpj"
+Repository = "https://github.com/RenanCampista/py-cpf-cnpj"
+Issues = "https://github.com/RenanCampista/py-cpf-cnpj/issues"
+
+[tool.setuptools]
+packages = ["py_cpf_cnpj"]
