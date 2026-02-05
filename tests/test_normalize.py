@@ -8,6 +8,7 @@ def test_normalize_cpf():
     assert normalize_cpf(12345678909) == "12345678909"
     assert normalize_cpf("00A.123.456-78") == "0012345678"
 
+
 def test_normalize_cpf_invalid():
     assert normalize_cpf(None) == ""
 
