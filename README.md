@@ -1,4 +1,5 @@
 # 📦 br-cpf-cnpj
+![Tests](https://github.com/RenanCampista/br-cpf-cnpj/actions/workflows/tests.yml/badge.svg)
 
 A Python library for **CPF and CNPJ validation and generation**, with **support for the new alphanumeric CNPJ standard**.
 
