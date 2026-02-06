@@ -30,7 +30,17 @@ from br_cpf_cnpj import is_valid_cpf
 
 is_valid_cpf("529.982.247-25")
 # True
+
+# Validate unmasked CPF
+is_valid_cpf("55782724366")
+# True
+
+# Validate numeric CPF
+is_valid_cpf(70714720178)
+# True
 ```
+**NOTE**: If the value is a number, it will be converted to a string and any leading zeros will be removed.
+
 
 ### Validate CNPJ
 
@@ -43,6 +53,10 @@ is_valid_cnpj("11.222.333/0001-81")
 
 # Validate alphanumeric CNPJ
 is_valid_cnpj("2P.76B.MNX/0001-66")
+# True
+
+# Validate unmasked CNPJ
+is_valid_cnpj("B4ESBMHS000102")
 # True
 ```
 
@@ -132,7 +146,17 @@ from br_cpf_cnpj import is_valid_cpf
 
 is_valid_cpf("529.982.247-25")
 # True
+
+# Validar CPF sem máscara
+is_valid_cpf("55782724366")
+# True
+
+# Validar CPF numérico
+is_valid_cpf(70714720178)
+# True
 ```
+**NOTA**: Se o valor for um número, ele será convertido para string e quaisquer zeros à esquerda serão removidos.
+
 
 ### Validar CNPJ
 
@@ -145,6 +169,10 @@ is_valid_cnpj("11.222.333/0001-81")
 
 # Validar CNPJ alfanumérico
 is_valid_cnpj("2P.76B.MNX/0001-66")
+# True
+
+# Validar CNPJ sem máscara
+is_valid_cnpj("B4ESBMHS000102")
 # True
 ```
 
