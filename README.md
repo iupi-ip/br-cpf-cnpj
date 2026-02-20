@@ -1,6 +1,6 @@
 # 📦 br-cpf-cnpj
 ![Tests](https://github.com/RenanCampista/br-cpf-cnpj/actions/workflows/tests.yml/badge.svg)
-![Coverage](https://codecov.io/gh/RenanCampista/br-cpf-cnpj/branch/main/graph/badge.svg)
+[![codecov](https://codecov.io/gh/RenanCampista/br-cpf-cnpj/graph/badge.svg?token=CCHD3RUPVS)](https://codecov.io/gh/RenanCampista/br-cpf-cnpj)
 
 A Python library for **CPF and CNPJ validation and generation**, with **support for the new alphanumeric CNPJ standard**.
 
