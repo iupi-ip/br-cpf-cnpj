@@ -29,3 +29,8 @@ and this project follows **Semantic Versioning (SemVer)**.
 ## [0.1.2] - 2026-02-05
 ### Fixed
 - Example code snippets in README.md
+
+## [0.2.0] - 2026-02-20
+### Changed
+- UV to Pyproject.toml for better dependency management and packaging
+- Add coverage reporting with pytest-cov

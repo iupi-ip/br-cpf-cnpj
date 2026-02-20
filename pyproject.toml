@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
 
 [project]
 name = "br-cpf-cnpj"
-version = "0.1.2"
+version = "0.2.0"
 description = "CPF and CNPJ validation and generation with support for alphanumeric CNPJ"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -19,19 +19,46 @@ keywords = ["cpf", "cnpj", "brasil", "validation", "validação"]
 classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent"
 ]
 
 dependencies = []
 
+[tool.uv.build-backend]
+module-name = "br_cpf_cnpj"
+module-root = ""
+
+[dependency-groups]
+dev = [
+    "pytest-cov>=7.0.0",
+]
+
 [project.optional-dependencies]
-dev = ["pytest"]
+dev = [
+    "pytest",
+    "pytest-cov",
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov=br_cpf_cnpj --cov-report=xml --cov-report=term-missing"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["br_cpf_cnpj"]
+omit = [
+    "tests/*",
+    "*/__init__.py",
+    "*/__version__.py",
+]
+
+[tool.coverage.report]
+fail_under = 90
 
 [project.urls]
 Homepage = "https://github.com/RenanCampista/br-cpf-cnpj"
 Repository = "https://github.com/RenanCampista/br-cpf-cnpj"
 Issues = "https://github.com/RenanCampista/br-cpf-cnpj/issues"
-
-[tool.setuptools]
-packages = ["br_cpf_cnpj"]

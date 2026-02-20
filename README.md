@@ -1,5 +1,6 @@
 # 📦 br-cpf-cnpj
 ![Tests](https://github.com/RenanCampista/br-cpf-cnpj/actions/workflows/tests.yml/badge.svg)
+![Coverage](https://codecov.io/gh/RenanCampista/br-cpf-cnpj/branch/main/graph/badge.svg)
 
 A Python library for **CPF and CNPJ validation and generation**, with **support for the new alphanumeric CNPJ standard**.
 
@@ -106,9 +107,16 @@ print(cnpj_alphanumeric)
 
 ---
 
-## Contributing
-Contributions are very welcome!  
-Feel free to open issues, suggest improvements, or submit pull requests.
+## 🤝 Contributing
+
+Contributions are very welcome! 
+
+### Development Setup
+This project uses [uv](https://docs.astral.sh/uv/) for dependency management. To set up your development environment:
+
+1. Clone the repository
+2. Install dependencies: `uv sync --extra dev`
+3. Run tests: `uv run pytest`
 
 
 ## 📄 License
@@ -220,9 +228,15 @@ print(cnpj_alphanumeric)
   `value = ord(char) - ord('0')`
 - Pesos cíclicos de 2 → 9
 
-## Contribuindo
+## 🤝 Contribuindo
 Contribuições são muito bem-vindas!
-Sinta-se à vontade para abrir issues, sugerir melhorias ou enviar pull requests.
+
+### Configuração do Ambiente de Desenvolvimento
+Este projeto utiliza [uv](https://docs.astral.sh/uv/) para gerenciamento de dependências. Para configurar seu ambiente de desenvolvimento:  
+
+1. Clone o repositório
+2. Instale as dependências: `uv sync --extra dev`
+3. Execute os testes: `uv run pytest`
 
 ## 📄 License
 MIT License.
