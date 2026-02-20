@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
 
 [project]
 name = "br-cpf-cnpj"
@@ -19,11 +19,18 @@ keywords = ["cpf", "cnpj", "brasil", "validation", "validação"]
 classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent"
 ]
 
 dependencies = []
+
+[tool.uv.build-backend]
+module-name = "br_cpf_cnpj"
+module-root = ""
 
 [project.optional-dependencies]
 dev = ["pytest"]
@@ -32,6 +39,3 @@ dev = ["pytest"]
 Homepage = "https://github.com/RenanCampista/br-cpf-cnpj"
 Repository = "https://github.com/RenanCampista/br-cpf-cnpj"
 Issues = "https://github.com/RenanCampista/br-cpf-cnpj/issues"
-
-[tool.setuptools]
-packages = ["br_cpf_cnpj"]
