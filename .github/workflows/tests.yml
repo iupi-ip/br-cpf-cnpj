@@ -1,30 +1,32 @@
-name: Tests
+name: Run tests and upload coverage
 
 on: [push, pull_request]
 
 jobs:
   test:
+    name: Run tests and collect coverage
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
-          enable-cache: true # Faz o cache das libs automaticamente
+          enable-cache: true
 
       - name: Set up Python
-        run: uv python install 3.10
+        run: uv python install "3.12"
 
       - name: Install dependencies
-        run: uv pip install -e ".[dev]"
+        run: uv sync --extra dev
 
-      - name: Run tests with coverage
-        run: uv run pytest --cov=br_cpf_cnpj --cov-report=xml
+      - name: Run tests
+        run: uv run pytest --cov=br_cpf_cnpj --cov-branch --cov-report=xml
 
-      - name: Upload coverage to Codecov
+      - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage.xml
-          fail_ci_if_error: true
