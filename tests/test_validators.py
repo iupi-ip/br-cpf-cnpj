@@ -1,4 +1,4 @@
-from br_cpf_cnpj.validator import is_valid_cpf, is_valid_cnpj
+from br_cpf_cnpj.validators import is_valid_cpf, is_valid_cnpj
 
 
 def test_valid_cpf():

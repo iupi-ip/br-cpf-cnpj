@@ -1,5 +1,5 @@
 from br_cpf_cnpj.generator import generate_random_cpf, generate_random_cnpj
-from br_cpf_cnpj.validator import is_valid_cpf, is_valid_cnpj
+from br_cpf_cnpj.validators import is_valid_cpf, is_valid_cnpj
 
 
 def test_generate_random_cpf():
