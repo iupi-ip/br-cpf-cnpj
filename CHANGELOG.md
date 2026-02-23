@@ -34,3 +34,10 @@ and this project follows **Semantic Versioning (SemVer)**.
 ### Changed
 - UV to Pyproject.toml for better dependency management and packaging
 - Add coverage reporting with pytest-cov
+
+## [0.2.1] - 2026-02-23
+### Added
+- Automatic publishing to PyPI
+
+### Changed
+- Update project URLs to point to the correct GitHub repository 
